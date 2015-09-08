@@ -7,12 +7,14 @@ describe('cryptosquare', function() {
         expect(cryptosquare("hello")).to.eql([['h', 'e', 'l', 'l', 'o']]);
     });
 
-    it('any words with punctuation have the punctuation removed', function() {
-        expect(cryptosquare("don't")).to.eql([['d', 'o', 'n', 't']])
-    })
+    // it('any words with punctuation have the punctuation removed', function() {
+    //     expect(cryptosquare("don't")).to.eql([['d', 'o', 'n', 't']])
+    // });
 
     it('multiple words are split based on the spaces', function() {
         expect(cryptosquare("R R")).to.eql([['r'], ['r']]);
     });
+
+
 
 });
